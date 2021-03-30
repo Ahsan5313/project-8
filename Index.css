@@ -1,0 +1,294 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    margin: 0;
+}
+img{
+    border-radius: 50%;
+    
+}
+h1{
+    text-align: center;
+}
+a{
+    color:white;
+    font-size: 20px;
+    text-decoration: none;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+}
+[class*="col-"]{
+    width: 100%;
+}
+.navbar{
+    background-color: #40868b;
+   padding: 1px 7px;
+   text-align: center;
+}
+.navbar h1{
+    color:white;
+    margin: 0;
+    padding-top: 10px;
+  
+}
+.navbar .nav-manu{
+    display: flex;
+    text-transform: uppercase;
+    flex-direction: row;
+}
+.nav-manu a{
+    background-color: #0c6168;
+    border-radius: 10px;
+    margin: 7px 0;
+    padding: 10px;
+  
+}
+.nav-manu a:hover{
+    background-color: grey;
+}
+
+.navbar::after{
+     content: '';
+     display: table;
+     clear: both;
+}
+p{
+    text-align: center;
+    text-transform: uppercase;
+    color:grey;
+    font-size: 17px;
+}
+/*start profile*/
+.profile{
+    position: relative;
+    text-align: center;
+    margin: 0;
+}
+ h1{
+  
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+    margin-top: 250px;
+    padding: 7px 5px;
+}
+.profile p{
+    text-align: center;
+    padding: 7px 5px;
+}
+.profile .weather-icon{
+    position: absolute;
+    right: 5px;
+    top:-250px;
+    transition: linear 2s ;
+}
+.profile .weather-icon:hover{
+          transform: rotate(360deg);
+
+}
+.profile .weather-icon2{
+    position: absolute;
+    left: 20px;
+    top:300px;
+    transition: 2s linear;
+}
+.profile .weather-icon2:hover{
+    transform: rotate(360deg);
+}
+
+.profile::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+
+.aboutme{
+    height: 730px;
+    position: relative;
+    top:380px;
+    background-color: #0c6168; 
+    
+}
+.aboutme h2{
+    position: relative;
+    top:40px;
+    text-align: center;
+    color:black;
+}
+
+.desc{
+    position: relative;
+    top: 70px;
+    text-align: left;
+    overflow: hidden;
+    height: min-content;
+}
+.desc h2{
+    position: relative;
+    top: 1px;
+    text-transform: uppercase;
+    text-align: center;
+ 
+
+
+}
+.desc p{
+    text-align: left;
+    overflow: hidden;
+    color:black;
+}
+.dotted{
+    position: relative;
+    top:50px;
+    border: 6px dotted white;
+    border-bottom: none;
+    width: 70px;
+}
+.all{
+    position: relative;
+}
+.all img{
+    width: 200px;
+    height: 200px;
+    left: 50px;
+}
+.button{
+   position: relative;
+   top:90px;
+   left: 50%;
+   text-align: center;
+   border: none;
+   border-radius: 12px;
+   padding: 10px;
+   background-color: black;
+   color:white;
+   outline: none;
+}
+
+.aboutme::after{
+    content: '';
+    display: table;
+    clear: both;
+
+}
+.box{
+    margin-top: 400px;
+    width: 100%;
+    height: 600px;
+  
+    background-color: cornflowerblue;
+}
+
+.box h2{
+    text-align: center;
+    background-color: grey;
+
+}
+.card h2{
+    text-align: center;
+    color: white;
+}
+.card img{
+    
+    width: 120px;
+    height: 120px;
+    border: 1px solid black;
+   
+}
+img{
+    position: relative;
+    left: 40%;
+    top:0;
+}
+.animation-card{
+    padding: 1px 7px;
+}
+.animation-card li{
+    position: relative;
+    list-style: none;
+    text-align: left;
+    left: 10%;
+    margin: 40px;
+   
+
+}
+.animation-card li::before{
+    content: '';
+    height: 20px;
+    width: 100%;
+    position: absolute;
+    top:calc(100% + 5px);
+    background-color: thistle;
+    border-radius: 100px;
+}
+.animation-card li::after{
+    content: '';
+    height: 20px;
+    width: 0;
+    position: absolute;
+    top:calc(100% + 5px);
+    background-color: aqua;
+    border-radius: 100px;
+
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+}
+.animation-card li.html::after{
+    animation-name: html;
+}
+@keyframes html{
+    to{
+        width: 80%;
+    }
+}
+.animation-card li.css::after{
+    animation-name: css;
+}
+@keyframes css{
+    to{
+        width: 80%;
+    }
+}
+.animation-card li.js::after{
+    animation-name: js;
+}
+@keyframes js{
+    to{
+        width: 80%;
+        background-image: linear-gradient(yellow, red);
+    }
+}
+.animation-card li.bs::after{
+    animation-name: bs;
+}
+@keyframes bs{
+    to{
+        width: 80%;
+        background-image: linear-gradient(blue, red, yellow, green, cadetblue, salmon);
+    }
+}
+.animation-card li.p::after{
+    animation-name: p;
+}
+@keyframes p{
+    to{
+        width: 80%;
+    }
+}
+.animation-card li.j::after{
+    animation-name: j;
+}
+@keyframes j{
+    to{
+        width: 80%;
+    }
+}
